@@ -1,0 +1,273 @@
+@import "/public/assets/css/vars.css";
+
+@font-face {
+  font-family: open-sans;
+  src: url(/public/assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url(/public/assets/fonts/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: open-sans, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--body-text-color);
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 200px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--brand-color);
+  border-radius: 50px;
+  padding: 16px 40px;
+  text-transform: uppercase;
+  color: var(--brand-color);
+  background-color: var(--white-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.button:hover {
+  background-color: var(--brand-color);
+  color: var(--white-color);
+}
+
+.button svg {
+  fill: var(--brand-color);
+}
+
+.button:hover svg {
+  fill: var(--white-color);
+}
+
+.header__inner {
+  margin: 40px 0;
+}
+
+.header__logo > img {
+  width: 390px;
+  height: 74px;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 646px;
+  max-width: 1265px;
+  color: var(--white-color);
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 89.6px;
+  margin: 0 0 30px 0;
+}
+
+.hero__announce {
+  font-size: 32px;
+  line-height: 51px;
+}
+
+.news {
+  margin: 54px 0 83px 0;
+}
+
+.news__header {
+  min-height: 90px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 90px;
+}
+
+.news__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 82px 40px;
+  margin: 60px 0 83px 0;
+}
+
+.news__article {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+  flex-basis: 720px;
+}
+
+.article__data {
+  max-width: 118px;
+  max-height: 34px;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: var(--gray-color);
+  background-color: var(--light-gray-color);
+  line-height: 21.79px;
+}
+
+.article__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+}
+
+.article__title:hover {
+  color: var(--brand-color);
+}
+
+.article__button {
+  max-width: 214px;
+  max-height: 54px;
+}
+
+.article__button svg {
+  margin: 0 0 0 10px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  margin: 0 0 83px 0;
+}
+
+.pagination__link {
+  padding: 16px 23px;
+}
+
+.pagination__forward {
+  padding: 16px 41px;
+}
+
+.pagination__back {
+  padding: 16px 41px;
+}
+
+.pagination__back svg {
+  transform: rotate(180deg);
+}
+
+.active {
+  background-color: var(--brand-color);
+  color: var(--white-color);
+}
+
+.footer {
+  margin: 0 0 84px 0;
+}
+
+hr {
+  margin: 0 0 63px 0;
+  height: 1px;
+  color: var(--gray-color);
+}
+
+.main {
+  margin: 0 0 137px 0;
+}
+
+.breadcrumb {
+  margin: 0 0 22px 0;
+}
+
+.breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.5rem;
+  content: "/";
+}
+
+.breadcrumb__active {
+  color: var(--gray-color);
+}
+
+.full-article {
+  display: flex;
+  gap: 0 40px;
+}
+
+.full-article__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+}
+
+.full-article__title {
+  font-size: 64px;
+  font-weight: 600;
+  margin: 0 0 63px 0;
+  line-height: 90px;
+}
+
+.full-article__announce {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+  color: var(--brand-color);
+}
+
+.full-article__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.full-article__button {
+  width: 285px;
+  height: 54px;
+}
+
+.full-article__button svg {
+  margin: 0 10px 0 0;
+  transform: rotate(180deg);
+}
